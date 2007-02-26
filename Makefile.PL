@@ -12,6 +12,7 @@ WriteMakefile(
         'Sub::Override' => 0.07,
         'Test::More'    => 0,
     },
+    (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Acme-Lingua-EN-Inflect-Modern-*' },
 );
