@@ -19,6 +19,8 @@ Acme::Lingua::EN::Inflect::Modern - modernize Lingua::EN::Inflect rule's
 
 version 0.001
 
+  $Id$
+
 =cut
 
 our $VERSION = '0.001';
