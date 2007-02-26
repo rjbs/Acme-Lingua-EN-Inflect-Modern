@@ -1,9 +1,19 @@
 Changes
-MANIFEST
-META.yml # Will be created by "make dist"
+lib/Acme/Lingua/EN/Inflect/Modern.pm
 Makefile.PL
+MANIFEST			This list of files
 README
-lib/Acme.pm
 t/00-load.t
+t/classical_all.t
+t/classical_ancient.t
+t/classical_ancient_1.t
+t/classical_herd.t
+t/classical_herd_1.t
+t/classical_names.t
+t/classical_names_1.t
+t/classical_person.t
+t/classical_person_1.t
+t/classical_zero.t
+t/classical_zero_1.t
 t/pod-coverage.t
 t/pod.t

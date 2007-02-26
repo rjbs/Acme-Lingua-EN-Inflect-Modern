@@ -3,14 +3,15 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'Acme',
+    NAME                => 'Acme::Lingua::EN::Inflect::Modern',
     AUTHOR              => 'Ricardo SIGNES <rjbs@cpan.org >',
-    VERSION_FROM        => 'lib/Acme.pm',
-    ABSTRACT_FROM       => 'lib/Acme.pm',
+    VERSION_FROM        => 'lib/Acme/Lingua/EN/Inflect/Modern.pm',
+    ABSTRACT_FROM       => 'lib/Acme/Lingua/EN/Inflect/Modern.pm',
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
+        'Sub::Override' => 0.07,
+        'Test::More'    => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Acme-*' },
+    clean               => { FILES => 'Acme-Lingua-EN-Inflect-Modern-*' },
 );
