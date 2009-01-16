@@ -14,6 +14,14 @@ WriteMakefile(
         'Test::More'          => 0,
     },
     (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'perl') : ()),
+    (eval { ExtUtils::MakeMaker->VERSION(6.46) }
+      ? (META_MERGE => {
+          resources => {
+            Repository => 'http://github.com/rjbs/acme-lingua-en-inflect-modern'
+          }
+        })
+      : ()
+    ),
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Acme-Lingua-EN-Inflect-Modern-*' },
 );
