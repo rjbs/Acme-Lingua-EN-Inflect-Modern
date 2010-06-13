@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Acme::Lingua::EN::Inflect::Modern',
-    AUTHOR              => 'Ricardo SIGNES <rjbs@cpan.org >',
+    AUTHOR              => 'Ricardo SIGNES <rjbs@cpan.org>',
     VERSION_FROM        => 'lib/Acme/Lingua/EN/Inflect/Modern.pm',
     ABSTRACT_FROM       => 'lib/Acme/Lingua/EN/Inflect/Modern.pm',
     PL_FILES            => {},
