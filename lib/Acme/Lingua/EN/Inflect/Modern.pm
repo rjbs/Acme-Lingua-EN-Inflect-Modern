@@ -1,29 +1,15 @@
-package Acme::Lingua::EN::Inflect::Modern;
-use base qw(Exporter);
-
-use warnings;
 use strict;
+use warnings;
+package Acme::Lingua::EN::Inflect::Modern;
+use parent qw(Exporter);
+# ABSTRACT: modernize Lingua::EN::Inflect rule's
 
-use Lingua::EN::Inflect ();
-use Sub::Override;
+use Lingua::EN::Inflect 1.86 ();
+use Sub::Override 0.07;
 
 BEGIN { our %EXPORT_TAGS = %Lingua::EN::Inflect::EXPORT_TAGS };
 
 Exporter::export_ok_tags(qw( ALL ));
-
-=head1 NAME
-
-Acme::Lingua::EN::Inflect::Modern - modernize Lingua::EN::Inflect rule's
-
-=head1 VERSION
-
-version 0.004
-
-  $Id$
-
-=cut
-
-our $VERSION = '0.004';
 
 =head1 SYNOPSIS
 
@@ -72,22 +58,12 @@ sub _PL_noun {
   return $plural;
 }
 
-=head1 AUTHOR
-
-Ricardo SIGNES, C<< <rjbs@cpan.org > >>
-
 =head1 BUG'S
 
-Please report any bug's or feature request's the web interface at
-L<http://rt.cpan.org>.  I will be notified, and then you'll automatically be
-notified of progress on your bug as I make change's.
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2007 Ricardo SIGNES, All Right's Reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same term's as Perl itself.
+Please report any bug's or feature request's via the GitHub issue tracker at
+L<https://github.com/rjbs/Acme-Lingua-EN-Inflect-Modern/issues>.  I will be
+notified, and then you'll automatically be notified of progress on
+your bug as I make change's.
 
 =cut
 
