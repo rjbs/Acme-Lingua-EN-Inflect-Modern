@@ -1,5 +1,11 @@
 Revision history for Acme-Lingua-EN-Inflect-Modern
 
+{{$NEXT}}
+
+0.005     2013-10-27 22:19:55 America/New_York
+        - update packaging again, add repo, bugtracker
+        - replace use base with use parent
+
 0.004   2009-01-16
         update packaging
 
