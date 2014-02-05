@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package Acme::Lingua::EN::Inflect::Modern;
+
 use parent qw(Exporter);
 # ABSTRACT: modernize Lingua::EN::Inflect rule's
 
