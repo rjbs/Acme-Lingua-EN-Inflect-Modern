@@ -1,6 +1,8 @@
 Revision history for Acme-Lingua-EN-Inflect-Modern
 
 {{$NEXT}}
+        - update author contact info
+        - add perl-support section
 
 0.006     2014-02-04 22:31:38-05:00 America/New_York
         - fix metadata links
